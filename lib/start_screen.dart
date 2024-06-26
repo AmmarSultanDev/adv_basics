@@ -9,35 +9,44 @@ class StartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 111, 21, 175),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset(
-                'assets/images/quiz-logo.png',
-                height: 300.0,
+          child: Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Color.fromARGB(255, 83, 10, 125),
+                  Color.fromARGB(255, 171, 10, 216)
+                ],
               ),
-              const SizedBox(
-                height: 60,
-              ),
-              const Text(
-                'Learn Flutter the fun way!',
-                style: TextStyle(color: Colors.white, fontSize: 18),
-              ),
-              const SizedBox(
-                height: 50,
-              ),
-              OutlinedButton(
-                  onPressed: () {
-                    print('ça marche!');
-                  },
-                  child: const Text(
-                    'Start Quiz',
-                    style: TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold),
-                  ))
-            ],
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  'assets/images/quiz-logo.png',
+                  height: 300.0,
+                ),
+                const SizedBox(
+                  height: 60,
+                ),
+                const Text(
+                  'Learn Flutter the fun way!',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+                const SizedBox(
+                  height: 50,
+                ),
+                OutlinedButton(
+                    onPressed: () {
+                      print('ça marche!');
+                    },
+                    child: const Text(
+                      'Start Quiz',
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.bold),
+                    ))
+              ],
+            ),
           ),
         ),
       ),
