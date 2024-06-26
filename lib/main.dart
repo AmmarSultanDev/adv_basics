@@ -10,6 +10,18 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const StartScreen();
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(colors: [
+              Color.fromARGB(255, 83, 10, 125),
+              Color.fromARGB(255, 171, 10, 216)
+            ]),
+          ),
+          child: const StartScreen(),
+        ),
+      ),
+    );
   }
 }
