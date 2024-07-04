@@ -1,3 +1,4 @@
+import 'package:adv_basics/answer_button.dart';
 import 'package:adv_basics/data/questions.dart';
 import 'package:flutter/material.dart';
 
@@ -24,33 +25,21 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
         const SizedBox(
           height: 30,
         ),
-        OutlinedButton(
-          onPressed: () {},
-          child: Text(
-            questions[0].answers[0],
-            style: const TextStyle(color: Colors.white),
-          ),
+        AnswerButton(
+          answerText: questions[0].answers[0],
+          onTap: () {},
         ),
-        OutlinedButton(
-          onPressed: () {},
-          child: Text(
-            questions[0].answers[1],
-            style: const TextStyle(color: Colors.white),
-          ),
+        AnswerButton(
+          answerText: questions[0].answers[1],
+          onTap: () {},
         ),
-        OutlinedButton(
-          onPressed: () {},
-          child: Text(
-            questions[0].answers[2],
-            style: const TextStyle(color: Colors.white),
-          ),
+        AnswerButton(
+          answerText: questions[0].answers[2],
+          onTap: () {},
         ),
-        OutlinedButton(
-          onPressed: () {},
-          child: Text(
-            questions[0].answers[3],
-            style: const TextStyle(color: Colors.white),
-          ),
+        AnswerButton(
+          answerText: questions[0].answers[3],
+          onTap: () {},
         ),
       ],
     ));
