@@ -10,38 +10,49 @@ class QuestionsScreen extends StatefulWidget {
 }
 
 class _QuestionsScreenState extends State<QuestionsScreen> {
+  var currentQuestionIndex = 0;
+
+  void answerQuestion() {
+    setState(() {
+      if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++;
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
+    final currentQuestion = questions[currentQuestionIndex];
     return Center(
+      child: Container(
+        padding: const EdgeInsets.all(40.0),
         child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text(
-          questions[0].text,
-          textAlign: TextAlign.center,
-          style: const TextStyle(
-              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24),
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              currentQuestion.text,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            ...currentQuestion.getShuffledAnswers().map(
+              (answer) {
+                return AnswerButton(
+                    answerText: answer,
+                    onTap: () {
+                      answerQuestion;
+                    });
+              },
+            ),
+          ],
         ),
-        const SizedBox(
-          height: 30,
-        ),
-        AnswerButton(
-          answerText: questions[0].answers[0],
-          onTap: () {},
-        ),
-        AnswerButton(
-          answerText: questions[0].answers[1],
-          onTap: () {},
-        ),
-        AnswerButton(
-          answerText: questions[0].answers[2],
-          onTap: () {},
-        ),
-        AnswerButton(
-          answerText: questions[0].answers[3],
-          onTap: () {},
-        ),
-      ],
-    ));
+      ),
+    );
   }
 }
