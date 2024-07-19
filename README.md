@@ -30,6 +30,12 @@ To get started with this project, follow these steps:
 ## Screenshots
 Include some screenshots of your app here to showcase its functionality and design.
 
+![Start screen](<Simulator Screenshot - iPhone 15 Pro - 2024-07-19 at 10.38.22.png>)
+
+![Questions screen](<Simulator Screenshot - iPhone 15 Pro - 2024-07-19 at 10.38.29.png>)
+
+![Results screen](<Simulator Screenshot - iPhone 15 Pro - 2024-07-19 at 10.39.32.png>)
+
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
