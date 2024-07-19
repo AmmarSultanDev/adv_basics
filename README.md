@@ -28,7 +28,6 @@ To get started with this project, follow these steps:
 - Any compatible IDE (e.g., Visual Studio Code, Android Studio)
 
 ## Screenshots
-Include some screenshots of your app here to showcase its functionality and design.
 
 ![Start screen](<Simulator Screenshot - iPhone 15 Pro - 2024-07-19 at 10.38.22.png>)
 
@@ -36,8 +35,6 @@ Include some screenshots of your app here to showcase its functionality and desi
 
 ![Results screen](<Simulator Screenshot - iPhone 15 Pro - 2024-07-19 at 10.39.32.png>)
 
-## License
-This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgements
 - [Flutter](https://flutter.dev/)
@@ -45,4 +42,4 @@ This project is licensed under the [MIT License](LICENSE).
 - [Flutter & Dart - The Complete Guide [2024]](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)
 
 ## Contact
-For any inquiries or support, please contact me at [ammarsultan1445@gmail.com](mailto:your-email@example.com).
+For any inquiries or support, please contact me at [ammarsultan1445@gmail.com](mailto:ammarsultan1445@gmail.com).
